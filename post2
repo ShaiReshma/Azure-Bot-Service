@@ -1,0 +1,49 @@
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://techcrunch.com/wp-content/uploads/2017/12/screenshot-2017-12-13-10-11-27.png?w=730&amp;crop=1" alt="Screenshot 2017-12-13 10.11.27"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>Image Credits:&nbsp;</strong>vladwel&nbsp;/&nbsp;Getty Images&nbsp;(Image has been modified)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="speakable-summary"><a target="_blank" href="https://www.microsoft.com/" rel="noreferrer noopener">Microsoft</a>&nbsp;introduced the Azure Bot Framework more than two years ago and companies have been building chatbots for a variety of scenarios ever since. Today, the company made&nbsp;generally available the&nbsp;<a target="_blank" href="https://azure.microsoft.com/en-us/services/bot-service/" rel="noreferrer noopener">Microsoft Azure Bot Service</a>&nbsp;and Microsoft Cognitive Language Understanding service (known as LUIS).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>“Making these two services generally available on Azure simultaneously extends the capabilities of developers to build custom models that can naturally interpret the intentions of people conversing with bots,” Lili Cheng, corporate vice president at the Microsoft AI and Research division wrote&nbsp;<a target="_blank" href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2Fltbotluis&amp;data=04%7C01%7Cpstubbs%40microsoft.com%7Cc6acdcc7e7bd41a3bd8908d5424be270%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636487816061682628%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&amp;sdata=kXHTpFEHHWY1PvRvfGtMG1KpYYV9CmWZ1L2BrFf7XT0%3D&amp;reserved=0" rel="noreferrer noopener">in a company blog post</a>&nbsp;on the announcement.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Conversational AI allows humans to have a conversation with a bot, such as an online chat or in a chat tool like Facebook Messenger or Kik. The customer asks a question, and if it’s routine, the bot can answer it in a natural conversational manner that feels like you’re talking to a human — at least that’s the theory.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://jac.yahoosandbox.com/1.2.0/safeframe.html"} -->
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+https://jac.yahoosandbox.com/1.2.0/safeframe.html
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>Microsoft has created a whole set of tools for developers to create their bots, including the Bot Framework and Cognitive Services. Cheng says Microsoft has designed the bot framework to be as flexible as possible. You don’t even need to host it on Azure if you don’t want to. The Bot service is actually part of a broader set of Azure services Microsoft has created to help developers build applications with artificial intelligence underpinnings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://beta.techcrunch.com/wp-content/uploads/2017/12/null1.png" alt="" width="509" height="202"></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Graphic: Microsoft</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>“You can build a bot and auto provision on Azure and you can publish on Facebook Messenger, Slack and most of the Microsoft channels [such as] Cortana, Skype and Skype for teams,” Cheng explained. You also can embed the bot in a web page or in an app and customize the UI as you see fit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>When you combine the bot building tools with the LUIS language understanding tool, you get what should be a powerful combination. The latter helps the bot understand and parse the query to deliver the correct answer (and understand related queries).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cheng said more than 200,000 developers have signed up for the Bot service, and they currently have 33,000 active bots in areas like retail, healthcare, financial services and insurance. Companies building bots with the Microsoft tools include Molson Coors, UPS and Sabre.</p>
+<!-- /wp:paragraph -->
