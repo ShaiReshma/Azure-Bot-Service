@@ -1,0 +1,343 @@
+<!-- wp:paragraph -->
+<p>A blog about software development best practices, how-toes, and tips from practitioners.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.clariontech.com/hubfs/Azure%20Chatbot.png" alt="Building A Microsoft Azure Bot Framework Tutorial"/><figcaption>Building A Microsoft Azure Bot Framework Tutorial</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Every business focusing on offering personalized customer experience is adopting&nbsp;<a href="https://www.clariontech.com/blog/pros-and-cons-of-having-a-chatbot-for-your-business">Chatbots</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>These chatbots are basically software that are capable of having human like conversations and are powered by machine learning and artificial intelligence.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bots are usually built on the top of a platform like Azure, Botsify, etc. and then hosted onto the application. These can be mainly categorized as:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(a) Command based</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(b) AI based.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(The cost and power of the bots depends on the above factors)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Command based Chatbots:&nbsp;Rely on a databank or a knowledge base of question and replies. The bots reply by selecting an answer that matches the context of a query. Command based chatbots are not intelligent enough to create their knowledge base thus making them capable of answering only a limited set of queries.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>AI based Chatbots:&nbsp;They can answer enigmatic questions. The user here does not have to be very specific when asking questions to these chatbots.&nbsp; The chatbots here have become intelligent over the time learning from the past conversations and reply using natural language processing (NLP).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Both the above categories have their own pros and cons. When we say that the AI chatbots are capable of answering a wide range of questions, they might fail to give grammatically correct answers and also struggle with longer sentences. Whereas the command based bots can give the user more reliable and grammatically correct answers but fail to answer any question that comes out of the box.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>How much does an Azure Chabot cost?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The direct line channel of an Azure Chatbot is free for the first 10,000 messages month wise. With such a free service, the Azure chatbot started costing $0.50 for other additional messages of 1000. You can use the free tier and stop using it!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>A Chatbot Comparison Table</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Bot Name</strong></td><td><strong>Features</strong></td><td><strong>Programming Languages</strong></td></tr><tr><td><strong>IBM Watson Conversation Service</strong></td><td>Built on a neural network with three main components; Intents, Entities, Dialog</td><td>Node SDKJava SDKPython SDKiOS SDKUnity SDK</td></tr><tr><td><strong>Microsoft Bot Framework</strong></td><td>Recognizes the user’s intent.&nbsp;Incorporates LUIS for understanding natural language, Cortana for voice, and the Bing APIs for search.</td><td>Bot Builder SDK (.NET SDK and Node.js SDK.)Bot ConnectorDeveloper PortalBot Directory</td></tr><tr><td><strong>AgentBot</strong></td><td>Knows natural language.Memory to continue consistency throughout long conversations.Collect client information to carry customized solutions.&nbsp;</td><td>Use REST API to integrate with CRM and other platforms.</td></tr><tr><td><strong>wit.ai</strong></td><td>Use Entities, Intents, Context, ActionsNatural Language Process (NLP)&nbsp;</td><td>Node.js clientPython clientRuby clientOn other platforms: HTTP API</td></tr><tr><td><strong>Api.ai</strong></td><td>Go with the query to the most appropriate intent based on information contained in the intent and the user’s machine learning model.&nbsp;Converts the query text into actionable data and returns output data as a JSON response object.&nbsp;Influences predefined data packages composed over several years.</td><td>AndroidiOSCordovaHTMLJavaScriptNode.js.NETUnityXamarinC++PythonRubyPHP (community supported)Epson MoverioBotkitJava</td></tr><tr><td><strong>Microsoft Language Understanding Intelligent Service (LUIS)</strong></td><td>Intents and entities.All LUIS applications are domain-specific topic or content related.Active learning.&nbsp;Use pre-existing, world-class, pre-built models from Bing and Cortana.&nbsp;Deploy models to an HTTP endpoint with one click. LUIS returns easy-to-use JSON."</td><td>C# SDKPython SDKNode JS SDKAndroid SDK</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2>Create an Azure Chatbot</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Step 1:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Post login to the azure portal ‘Add a new resource’ for ‘Web App Bot’ in ‘AI + Machine Learning’ under the Azure Marketplace section.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_1.png?width=431&amp;name=Azure%20Chatbot_1.png" alt="Web App Bot"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>Step 2:Add details for the bot.Bot Name: Enter a Bot name in the respective field.Subscription: Select the azure subscription account here.Resource Group: Select the resource group to put this chatbot under.Location: Enter the location of the resource group.</td><td><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=414&amp;name=Azure%20Chatbot_2.png" alt="Add details for the bot" width="414" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=207&amp;name=Azure%20Chatbot_2.png 207w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=414&amp;name=Azure%20Chatbot_2.png 414w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=621&amp;name=Azure%20Chatbot_2.png 621w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=828&amp;name=Azure%20Chatbot_2.png 828w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=1035&amp;name=Azure%20Chatbot_2.png 1035w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_2.png?width=1242&amp;name=Azure%20Chatbot_2.png 1242w"></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>Step 3:Add further details for the App Name and select the Bot Template.Create a new Service plan here, if there isn’t any existing plan for the subscription account.</td><td><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=507&amp;name=Azure%20Chatbot_3.png" alt="Bot Template" width="507" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=254&amp;name=Azure%20Chatbot_3.png 254w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=507&amp;name=Azure%20Chatbot_3.png 507w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=761&amp;name=Azure%20Chatbot_3.png 761w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=1014&amp;name=Azure%20Chatbot_3.png 1014w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=1268&amp;name=Azure%20Chatbot_3.png 1268w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_3.png?width=1521&amp;name=Azure%20Chatbot_3.png 1521w"></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>&nbsp;The Bot template we are selecting is the ‘Question and Answer’&nbsp;This template will allow us to attach the knowledge base to the bot.&nbsp;&nbsp;</td><td><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=514&amp;name=Azure%20Chatbot_4.png" alt="knowledge base" width="514" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=257&amp;name=Azure%20Chatbot_4.png 257w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=514&amp;name=Azure%20Chatbot_4.png 514w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=771&amp;name=Azure%20Chatbot_4.png 771w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=1028&amp;name=Azure%20Chatbot_4.png 1028w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=1285&amp;name=Azure%20Chatbot_4.png 1285w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_4.png?width=1542&amp;name=Azure%20Chatbot_4.png 1542w"></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Step 4:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>After selecting the template, we need to create a knowledge base or a databank, based on the requirements.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The knowledge base can be added here:&nbsp;<a href="https://www.qnamaker.ai/Create">https://www.qnamaker.ai/Create</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_5.png?width=659&amp;name=Azure%20Chatbot_5.png" alt="databank"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>Step 5:&nbsp;&nbsp;Going back to the azure portal, create a resource called ‘QnA Maker’.Add the required details:Name: Name for the QnA Maker resource.Subscription: Select the azure subscription account here.Resource Group: Select the resource group to put this resource under.Pricing Tier: Set the minimum price here.App Name: Enter the name of the QnA Maker application that we need for the mapping with the knowledge base created in step 4.</td><td><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=269&amp;name=Azure%20Chatbot_6.png" alt="QnA Maker" width="269" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=135&amp;name=Azure%20Chatbot_6.png 135w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=269&amp;name=Azure%20Chatbot_6.png 269w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=404&amp;name=Azure%20Chatbot_6.png 404w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=538&amp;name=Azure%20Chatbot_6.png 538w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=673&amp;name=Azure%20Chatbot_6.png 673w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_6.png?width=807&amp;name=Azure%20Chatbot_6.png 807w"></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3>&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>Step 6:<br>Connecting the QnA and the knowledge base (KB)There are 3 details that are required to be filled in here.While creating the knowledge base, we signing in using the Microsoft account with auto-filled details. details.Once the details are confirmed, ‘Create the KB’.&nbsp;</td><td><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=424&amp;name=Azure%20Chatbot_7.png" alt="Connecting the QnA and the knowledge base (KB)" width="424" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=212&amp;name=Azure%20Chatbot_7.png 212w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=424&amp;name=Azure%20Chatbot_7.png 424w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=636&amp;name=Azure%20Chatbot_7.png 636w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=848&amp;name=Azure%20Chatbot_7.png 848w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=1060&amp;name=Azure%20Chatbot_7.png 1060w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_7.png?width=1272&amp;name=Azure%20Chatbot_7.png 1272w"></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3>&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Step 7:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Every created KB has a basic set of attached question answers. In addition, we can add several other QnA pairs as per the requirement.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Once the KB is updated, clicking on ‘Save and Train’ will update the KB source.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=681&amp;name=Azure%20Chatbot_8.png" alt="KB source" width="681" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=341&amp;name=Azure%20Chatbot_8.png 341w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=681&amp;name=Azure%20Chatbot_8.png 681w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=1022&amp;name=Azure%20Chatbot_8.png 1022w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=1362&amp;name=Azure%20Chatbot_8.png 1362w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=1703&amp;name=Azure%20Chatbot_8.png 1703w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_8.png?width=2043&amp;name=Azure%20Chatbot_8.png 2043w"></h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Step 8:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><em>Publishing the KB to the QnA Maker resource.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Unless the KB is published, it cannot be accessed through the bot.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_9.png?width=770&amp;name=Azure%20Chatbot_9.png" alt="Publishing the KB to the QnA Maker resource"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3>&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Step 9:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><em>Collecting keys from the Settings.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>These keys need to be added to the bot settings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_10.png?width=530&amp;name=Azure%20Chatbot_10.png" alt="Collecting keys"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3>&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Step 10:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The KB is all set and ready to be used. Now, this can be connected to the bot’s channels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_11.png?width=644&amp;name=Azure%20Chatbot_11.png" alt="bot’s channels"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>We will connect it to the Web channel and after get connected; it will give us placeholder code that needs to be included into our web project.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=756&amp;name=Azure%20Chatbot_12.png" alt="Azure AI Resource" width="756" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=378&amp;name=Azure%20Chatbot_12.png 378w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=756&amp;name=Azure%20Chatbot_12.png 756w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=1134&amp;name=Azure%20Chatbot_12.png 1134w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=1512&amp;name=Azure%20Chatbot_12.png 1512w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=1890&amp;name=Azure%20Chatbot_12.png 1890w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_12.png?width=2268&amp;name=Azure%20Chatbot_12.png 2268w">In the above piece of code,&nbsp;<em>TestWebAppBot2019&nbsp;</em>is the name of the Azure AI Resource that we created in Step 1 and named in Step 3.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>Upon running the application with the above code, it delivers the below output.The question asked here from the web application is ‘What’s your age?’ and is responded by WebAppBot2019 as ‘I’m age free.’&nbsp;This particular answer has appeared as a result of the QnA pair from the knowledge base created and published above.</td><td><img src="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=274&amp;name=Azure%20Chatbot_13.png" alt="Chatbot" width="274" srcset="https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=137&amp;name=Azure%20Chatbot_13.png 137w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=274&amp;name=Azure%20Chatbot_13.png 274w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=411&amp;name=Azure%20Chatbot_13.png 411w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=548&amp;name=Azure%20Chatbot_13.png 548w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=685&amp;name=Azure%20Chatbot_13.png 685w, https://www.clariontech.com/hs-fs/hubfs/Azure%20Chatbot_13.png?width=822&amp;name=Azure%20Chatbot_13.png 822w"></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2>Jobs Replacement with Chatbots</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>With the revolutionary contribution of AI chatbots based of NLP, the businesses around the globe are growing more efficiently. However, it is replacing human employees with intelligent and deep learning based chatbots. According to a&nbsp;<a href="https://www.openaccessgovernment.org/chatbots-the-future/59461/" rel="noreferrer noopener" target="_blank">study</a>, following jobs are getting affected for the rise of chatbots:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Cashiers (97%)</li><li>Bookkeeping clerks (97%)</li><li>Credit analysts (98%)</li><li>Accountants (94%)</li><li>Paralegals (95%)</li><li>Telemarketers (99%)</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Moving On</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>With the rise in automation technologies in all sectors of the industry, chatbots can surely be impactful for both businesses as well as the customers. Chatbots are predicted to replace all human interaction for providing assistance on a business website. Thus implementing them on the websites can help high quality customer interaction and eventually a significant market presence with better products &amp; services.<a href="https://www.clariontech.com/blog/building-a-microsoft-azure-bot-framework-tutorial#"></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.clariontech.com/blog/building-a-microsoft-azure-bot-framework-tutorial#"></a><a href="https://www.clariontech.com/blog/building-a-microsoft-azure-bot-framework-tutorial#"></a><a href="https://www.clariontech.com/blog/building-a-microsoft-azure-bot-framework-tutorial#"></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"linkDestination":"custom"} -->
+<figure class="wp-block-image"><a href="https://www.clariontech.com/cs/c/?cta_guid=97273520-beee-4e16-9163-27b2279c26c6&amp;signature=AAH58kHbyPDNsNXliYvpu0KDBQKcwFEexA&amp;pageId=10651226992&amp;placement_guid=009e7fc7-7ccd-42a2-97a1-2d4debaf2617&amp;click=4576f30b-4c33-4acb-b91d-1734467ff7ff&amp;hsutk=a135f8d5807b7d63f89c3905e20df72c&amp;canon=https%3A%2F%2Fwww.clariontech.com%2Fblog%2Fbuilding-a-microsoft-azure-bot-framework-tutorial&amp;portal_id=3852769&amp;redirect_url=APefjpHx-byNX2CVfCh96U2ecXxpSTnFKfsbm0Rq3b4hqsfTRtPUuYxJj6FkQegdwJjg9XHAlOaQsd-BXwQD1CH1pw8w7Mh8d5em6beUo-a5wkg8LPPseHpE9oTLXbYC1WgAYsCWofuv&amp;__hstc=156662500.a135f8d5807b7d63f89c3905e20df72c.1665390771273.1665390771273.1665390771273.1&amp;__hssc=156662500.1.1665390771273&amp;__hsfp=3158525640&amp;contentType=blog-post" target="_blank" rel="noreferrer noopener"><img src="https://www.clariontech.com/hs-fs/hub/3852769/hub_generated/resized/c27a8495-748f-4d77-9239-bd6abc65a8ea.jpeg" alt="New call-to-action"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"align":"wide","style":{"typography":{"fontSize":"48px","lineHeight":"1.1"}}} -->
+<h2 class="alignwide" id="we-re-a-studio-in-berlin-with-an-international-practice-in-architecture-urban-planning-and-interior-design-we-believe-in-sharing-knowledge-and-promoting-dialogue-to-increase-the-creative-potential-of-collaboration" style="font-size:48px;line-height:1.1">We're a studio in Berlin with an international practice in architecture, urban planning and interior design. We believe in sharing knowledge and promoting dialogue to increase the creative potential of collaboration.</h2>
+<!-- /wp:heading -->
+
+<!-- wp:post-author /-->
+
+<!-- wp:post-author /-->
+
+<!-- wp:post-author /-->
+
+<!-- wp:post-author /-->
+
+<!-- wp:post-author /-->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"color":{"background":"#ffe97d","text":"#000000"},"elements":{"link":{"color":{"text":"#000000"}}},"spacing":{"padding":{"top":"2em","right":"2em","bottom":"2em","left":"2em"}}}} -->
+<div class="wp-block-column has-text-color has-background has-link-color" style="background-color:#ffe97d;color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em"><!-- wp:heading {"style":{"typography":{"fontSize":"40px"}}} -->
+<h2 id="single" style="font-size:40px"><strong>Single</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"fontSize":"normal"} -->
+<p class="has-normal-font-size" style="line-height:1.5"><strong>Enrich our growing community.</strong> </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"opacity":"css","style":{"color":{"background":"#000000"}},"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-text-color has-css-opacity has-background is-style-wide" style="background-color:#000000;color:#000000"/>
+<!-- /wp:separator -->
+
+<!-- wp:list {"fontSize":"normal"} -->
+<ul class="has-normal-font-size"><li>General admission and member discounts for one adult</li><li>One free ticket per special exhibition</li><li>Two single-use guest passes per year</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons {"align":"full","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+<div class="wp-block-buttons alignfull"><!-- wp:button {"textColor":"white","width":100,"style":{"color":{"background":"#000000"},"border":{"radius":0}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-white-color has-text-color has-background no-border-radius" style="background-color:#000000">$110 / year</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"color":{"background":"#d1d1e1","text":"#000000"},"elements":{"link":{"color":{"text":"#000000"}}},"spacing":{"padding":{"top":"2em","right":"2em","bottom":"2em","left":"2em"}}}} -->
+<div class="wp-block-column has-text-color has-background has-link-color" style="background-color:#d1d1e1;color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em"><!-- wp:heading {"style":{"typography":{"fontSize":"40px"}}} -->
+<h2 id="family" style="font-size:40px"><strong>Family</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"fontSize":"normal"} -->
+<p class="has-normal-font-size" style="line-height:1.5"><strong>Support special exhibitions.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"opacity":"css","className":"is-style-wide"} -->
+<hr class="wp-block-separator has-css-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:list {"fontSize":"normal"} -->
+<ul class="has-normal-font-size"><li>General admission and member discounts for two adults</li><li>Four free tickets per special exhibition</li><li>Four single-use guest passes per year</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons {"align":"full","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+<div class="wp-block-buttons alignfull"><!-- wp:button {"textColor":"white","width":100,"style":{"color":{"background":"#000000"},"border":{"radius":0}},"className":"is-style-fill"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-background no-border-radius" style="background-color:#000000">$200 / year</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"color":{"background":"#c0ebf1","text":"#000000"},"elements":{"link":{"color":{"text":"#000000"}}},"spacing":{"padding":{"top":"2em","right":"2em","bottom":"2em","left":"2em"}}}} -->
+<div class="wp-block-column has-text-color has-background has-link-color" style="background-color:#c0ebf1;color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em"><!-- wp:heading {"style":{"typography":{"fontSize":"40px"}}} -->
+<h2 id="patron" style="font-size:40px"><strong>Patron</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"normal"} -->
+<p class="has-normal-font-size"><strong>Take support to the next level.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"opacity":"css","className":"is-style-wide"} -->
+<hr class="wp-block-separator has-css-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:list {"fontSize":"normal"} -->
+<ul class="has-normal-font-size"><li>General admission and member discounts for two adults</li><li>Five free tickets per special exhibition</li><li>Six single-use guest passes per year</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons {"align":"full","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+<div class="wp-block-buttons alignfull"><!-- wp:button {"textColor":"white","width":100,"style":{"color":{"background":"#000000"},"border":{"radius":0}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-white-color has-text-color has-background no-border-radius" style="background-color:#000000">$400 / year</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"full","style":{"color":{"text":"#000000","background":"#ffffff"}}} -->
+<div class="wp-block-group alignfull has-text-color has-background" style="background-color:#ffffff;color:#000000"><!-- wp:spacer {"height":"64px"} -->
+<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":".9"}},"fontSize":"small"} -->
+<p class="has-text-align-center has-small-font-size" style="line-height:.9"><strong>GET IN TOUCH</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":59,"lineHeight":"1.15"}}} -->
+<h2 class="has-text-align-center" id="schedule-a-visit" style="font-size:59px;line-height:1.15"><strong>Schedule a Visit</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"width":50,"style":{"color":{"background":"#000000","text":"#ffffff"},"border":{"radius":"50px"}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50"><a class="wp-block-button__link has-text-color has-background" style="border-radius:50px;background-color:#000000;color:#ffffff">Contact us</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:spacer {"height":"64px"} -->
+<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:group -->
